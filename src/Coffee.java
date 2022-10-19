@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Coffee {
 	Scanner sc = new Scanner(System.in);
-	Boolean Empty = sc.nextBoolean();
+	String ans = sc.nextLine();
+	Boolean Empty = ans.equals("yes");
 
 	void Refill() {
 		System.out.println("Refilling coffee!");
@@ -15,7 +16,7 @@ public class Coffee {
 
 class Coffee_Main {
 	public static void main(String[] args) {
-		System.out.println("Is my coffee mug empty? (true / false)");
+		System.out.println("Is my coffee mug empty? (yes / no)");
 
 		Coffee coffee = new Coffee();
 
